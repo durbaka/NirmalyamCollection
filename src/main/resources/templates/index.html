@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirmalyam Collection App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+  <header>
+    <h1>Nirmalyam Collection</h1>
+    <p>Collecting your divine offerings responsibly.</p>
+  </header>
+
+  <main>
+    <section id="registration">
+      <h2>Register Your Home</h2>
+      <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Enter your address" required></textarea>
+
+        <label for="schedule">Preferred Collection Day:</label>
+        <select id="schedule" required>
+          <option value="monday">Monday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="friday">Friday</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section id="map">
+      <h2>Pin Your Location</h2>
+      <div id="map-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Nirmalyam Collection Service</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
